@@ -39,7 +39,7 @@
 
 1. 克隆仓库到本地：
 ```bash
-git clone https://github.com/YOUR_USERNAME/devtools-mcp-website.git
+git clone https://github.com/iccyyxx/devtools-mcp-website.git
 cd devtools-mcp-website
 ```
 
@@ -57,10 +57,10 @@ npx http-server -p 8080
 ## 🌐 在线访问
 
 网站已部署到 GitHub Pages：
-- 🔗 **主页**：https://YOUR_USERNAME.github.io/devtools-mcp-website/
-- 🔗 **GDG 介绍**：https://YOUR_USERNAME.github.io/devtools-mcp-website/gdg.html
-- 🔗 **DevTools MCP**：https://YOUR_USERNAME.github.io/devtools-mcp-website/devtools.html
-- 🔗 **关于牙方**：https://YOUR_USERNAME.github.io/devtools-mcp-website/profile.html
+- 🔗 **主页**：https://iccyyxx.github.io/devtools-mcp-website/
+- 🔗 **GDG 介绍**：https://iccyyxx.github.io/devtools-mcp-website/gdg.html
+- 🔗 **DevTools MCP**：https://iccyyxx.github.io/devtools-mcp-website/devtools.html
+- 🔗 **关于牙方**：https://iccyyxx.github.io/devtools-mcp-website/profile.html
 
 ## 🔧 技术栈
 
