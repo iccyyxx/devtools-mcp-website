@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🛠️ Chrome DevTools MCP Server - 强大的开发者工具</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- 导航栏 -->
+        <nav class="navbar">
+            <div class="nav-brand">
+                <span class="logo">🚀 DevFest Workshop</span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">🏠 首页</a>
+                <a href="gdg.html" class="nav-link">🌟 关于 GDG</a>
+                <a href="devtools.html" class="nav-link active">🛠️ DevTools MCP</a>
+                <a href="profile.html" class="nav-link">👨‍💻 关于我</a>
+            </div>
+        </nav>
+
+        <!-- 主要内容 -->
+        <main class="main-content">
+            <!-- 页面标题 -->
+            <section class="page-header">
+                <h1 class="page-title">
+                    🛠️ Chrome DevTools
+                    <br>
+                    <span class="gradient-text">MCP Server</span>
+                </h1>
+                <p class="page-subtitle">
+                    🚀 革命性的开发者工具，让调试和开发变得更加高效有趣！
+                </p>
+            </section>
+
+            <!-- MCP 简介 -->
+            <section class="content-section">
+                <h2 class="section-title">🤖 什么是 MCP？</h2>
+                <div class="mcp-intro">
+                    <div class="intro-content">
+                        <div class="intro-card">
+                            <div class="card-icon">🔗</div>
+                            <h3>Model Context Protocol</h3>
+                            <p>MCP (Model Context Protocol) 是一个开放标准，用于连接 AI 助手与各种数据源和工具，让 AI 能够更好地理解和操作外部系统。</p>
+                        </div>
+                        <div class="intro-card">
+                            <div class="card-icon">🌉</div>
+                            <h3>桥接 AI 与工具</h3>
+                            <p>通过 MCP，AI 助手可以直接与开发工具、数据库、API 等进行交互，实现更智能的自动化开发流程。</p>
+                        </div>
+                        <div class="intro-card">
+                            <div class="card-icon">⚡</div>
+                            <h3>实时交互</h3>
+                            <p>支持实时的双向通信，让 AI 助手能够动态地获取信息、执行操作并提供即时反馈。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- DevTools MCP Server 特性 -->
+            <section class="content-section">
+                <h2 class="section-title">✨ DevTools MCP Server 特性</h2>
+                <div class="features-showcase">
+                    <div class="feature-main">
+                        <div class="feature-visual">
+                            <div class="browser-mockup">
+                                <div class="browser-header">
+                                    <div class="browser-buttons">
+                                        <span class="btn-close"></span>
+                                        <span class="btn-minimize"></span>
+                                        <span class="btn-maximize"></span>
+                                    </div>
+                                    <div class="browser-url">🌐 localhost:3000</div>
+                                </div>
+                                <div class="browser-content">
+                                    <div class="devtools-panel">
+                                        <div class="panel-tab active">🔍 Elements</div>
+                                        <div class="panel-tab">📊 Console</div>
+                                        <div class="panel-tab">🌐 Network</div>
+                                        <div class="panel-tab">⚡ Performance</div>
+                                    </div>
+                                    <div class="code-preview">
+                                        <div class="code-line">&lt;div class="<span class="highlight">container</span>"&gt;</div>
+                                        <div class="code-line">  &lt;h1&gt;Hello World!&lt;/h1&gt;</div>
+                                        <div class="code-line">&lt;/div&gt;</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature-description">
+                            <h3>🎯 智能网页操作</h3>
+                            <p>通过 MCP Server，AI 助手可以直接控制 Chrome DevTools，实现：</p>
+                            <ul class="feature-list">
+                                <li>🖱️ 自动点击和导航</li>
+                                <li>📝 智能表单填写</li>
+                                <li>📸 页面截图和快照</li>
+                                <li>🔍 元素检查和分析</li>
+                                <li>📊 性能监控和分析</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 核心功能 -->
+            <section class="content-section">
+                <h2 class="section-title">🎮 核心功能</h2>
+                <div class="functions-grid">
+                    <div class="function-card automation">
+                        <div class="function-icon">🤖</div>
+                        <h3>自动化测试</h3>
+                        <p>自动执行 UI 测试、回归测试，生成测试报告，大大提升测试效率</p>
+                        <div class="function-tags">
+                            <span class="tag">E2E 测试</span>
+                            <span class="tag">回归测试</span>
+                            <span class="tag">自动报告</span>
+                        </div>
+                    </div>
+                    <div class="function-card debugging">
+                        <div class="function-icon">🐛</div>
+                        <h3>智能调试</h3>
+                        <p>AI 辅助的错误检测和修复建议，快速定位和解决代码问题</p>
+                        <div class="function-tags">
+                            <span class="tag">错误检测</span>
+                            <span class="tag">修复建议</span>
+                            <span class="tag">代码分析</span>
+                        </div>
+                    </div>
+                    <div class="function-card performance">
+                        <div class="function-icon">⚡</div>
+                        <h3>性能优化</h3>
+                        <p>实时性能监控，识别性能瓶颈，提供优化建议和最佳实践</p>
+                        <div class="function-tags">
+                            <span class="tag">性能监控</span>
+                            <span class="tag">瓶颈分析</span>
+                            <span class="tag">优化建议</span>
+                        </div>
+                    </div>
+                    <div class="function-card accessibility">
+                        <div class="function-icon">♿</div>
+                        <h3>无障碍检测</h3>
+                        <p>自动检测网页的无障碍性问题，确保应用对所有用户友好</p>
+                        <div class="function-tags">
+                            <span class="tag">A11y 检测</span>
+                            <span class="tag">WCAG 标准</span>
+                            <span class="tag">用户友好</span>
+                        </div>
+                    </div>
+                    <div class="function-card scraping">
+                        <div class="function-icon">🕷️</div>
+                        <h3>数据抓取</h3>
+                        <p>智能网页数据提取，支持动态内容和复杂页面结构</p>
+                        <div class="function-tags">
+                            <span class="tag">数据提取</span>
+                            <span class="tag">动态内容</span>
+                            <span class="tag">结构化数据</span>
+                        </div>
+                    </div>
+                    <div class="function-card monitoring">
+                        <div class="function-icon">📊</div>
+                        <h3>实时监控</h3>
+                        <p>持续监控网站状态，及时发现问题并发送告警通知</p>
+                        <div class="function-tags">
+                            <span class="tag">状态监控</span>
+                            <span class="tag">告警通知</span>
+                            <span class="tag">健康检查</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 使用场景 -->
+            <section class="content-section">
+                <h2 class="section-title">🎯 使用场景</h2>
+                <div class="scenarios-container">
+                    <div class="scenario-card">
+                        <div class="scenario-header">
+                            <div class="scenario-icon">🧪</div>
+                            <h3>自动化测试</h3>
+                        </div>
+                        <div class="scenario-content">
+                            <p>在 CI/CD 流程中集成自动化测试，确保每次部署的质量</p>
+                            <div class="scenario-example">
+                                <strong>示例：</strong> 电商网站的购物流程测试
+                                <ul>
+                                    <li>自动添加商品到购物车</li>
+                                    <li>填写收货信息</li>
+                                    <li>完成支付流程</li>
+                                    <li>验证订单生成</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scenario-card">
+                        <div class="scenario-header">
+                            <div class="scenario-icon">🔍</div>
+                            <h3>SEO 优化</h3>
+                        </div>
+                        <div class="scenario-content">
+                            <p>分析网页的 SEO 表现，提供优化建议</p>
+                            <div class="scenario-example">
+                                <strong>示例：</strong> 网站 SEO 健康检查
+                                <ul>
+                                    <li>检查页面标题和描述</li>
+                                    <li>分析关键词密度</li>
+                                    <li>验证结构化数据</li>
+                                    <li>检测页面加载速度</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="scenario-card">
+                        <div class="scenario-header">
+                            <div class="scenario-icon">📱</div>
+                            <h3>响应式测试</h3>
+                        </div>
+                        <div class="scenario-content">
+                            <p>在不同设备和屏幕尺寸下测试网页表现</p>
+                            <div class="scenario-example">
+                                <strong>示例：</strong> 多设备兼容性测试
+                                <ul>
+                                    <li>桌面端布局检查</li>
+                                    <li>平板适配验证</li>
+                                    <li>手机端交互测试</li>
+                                    <li>跨浏览器兼容性</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 技术优势 -->
+            <section class="content-section">
+                <h2 class="section-title">🚀 技术优势</h2>
+                <div class="advantages-grid">
+                    <div class="advantage-item">
+                        <div class="advantage-icon">⚡</div>
+                        <h3>高性能</h3>
+                        <p>基于 Chrome DevTools Protocol，直接与浏览器内核通信，执行效率极高</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🔒</div>
+                        <h3>安全可靠</h3>
+                        <p>沙箱环境运行，严格的权限控制，保护用户数据和系统安全</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🔧</div>
+                        <h3>易于集成</h3>
+                        <p>标准化的 MCP 接口，可轻松集成到现有的开发工具链中</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🌐</div>
+                        <h3>跨平台</h3>
+                        <p>支持 Windows、macOS、Linux 等多个平台，适应不同开发环境</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">📈</div>
+                        <h3>可扩展</h3>
+                        <p>模块化设计，支持自定义插件和扩展，满足特定需求</p>
+                    </div>
+                    <div class="advantage-item">
+                        <div class="advantage-icon">🤝</div>
+                        <h3>开源友好</h3>
+                        <p>开放源代码，活跃的社区支持，持续的功能更新和改进</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 开始使用 -->
+            <section class="content-section">
+                <h2 class="section-title">🎉 开始使用</h2>
+                <div class="getting-started">
+                    <div class="start-steps">
+                        <div class="step-item">
+                            <div class="step-icon">📦</div>
+                            <h3>安装 MCP Server</h3>
+                            <p>通过 npm 或 GitHub 获取最新版本</p>
+                            <code>npm install chrome-devtools-mcp</code>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step-item">
+                            <div class="step-icon">⚙️</div>
+                            <h3>配置连接</h3>
+                            <p>设置 Chrome DevTools 连接参数</p>
+                            <code>mcp-server --port 9222</code>
+                        </div>
+                        <div class="step-arrow">→</div>
+                        <div class="step-item">
+                            <div class="step-icon">🚀</div>
+                            <h3>开始自动化</h3>
+                            <p>编写脚本或使用 AI 助手进行操作</p>
+                            <code>mcp.navigate("https://example.com")</code>
+                        </div>
+                    </div>
+                    <div class="start-resources">
+                        <h3>📚 学习资源</h3>
+                        <div class="resource-links">
+                            <a href="#" class="resource-link">
+                                <span class="resource-icon">📖</span>
+                                <span>官方文档</span>
+                            </a>
+                            <a href="#" class="resource-link">
+                                <span class="resource-icon">🎥</span>
+                                <span>视频教程</span>
+                            </a>
+                            <a href="#" class="resource-link">
+                                <span class="resource-icon">💬</span>
+                                <span>社区讨论</span>
+                            </a>
+                            <a href="#" class="resource-link">
+                                <span class="resource-icon">🔧</span>
+                                <span>示例代码</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 返回导航 -->
+            <section class="back-navigation">
+                <a href="index.html" class="btn btn-primary">🏠 返回首页</a>
+                <a href="profile.html" class="btn btn-secondary">👨‍💻 认识牙方</a>
+            </section>
+        </main>
+
+        <!-- 页脚 -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>🎨 Made with ❤️ by 牙方</p>
+                <p>📧 联系我：<a href="mailto:80975930@qq.com">80975930@qq.com</a></p>
+                <div class="footer-emojis">
+                    <span>🌟</span>
+                    <span>💻</span>
+                    <span>🚀</span>
+                    <span>✨</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <style>
+        /* DevTools 页面特定样式 */
+        .page-header {
+            text-align: center;
+            padding: 3rem 0;
+            margin-bottom: 2rem;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            color: #333;
+            line-height: 1.2;
+        }
+
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            margin-bottom: 4rem;
+        }
+
+        .mcp-intro {
+            margin-bottom: 2rem;
+        }
+
+        .intro-content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .intro-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .intro-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.3);
+        }
+
+        .intro-card .card-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .intro-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 1rem;
+        }
+
+        .intro-card p {
+            font-size: 1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+        }
+
+        .features-showcase {
+            margin-bottom: 2rem;
+        }
+
+        .feature-main {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: center;
+        }
+
+        .browser-mockup {
+            background: #f5f5f5;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .browser-header {
+            background: #e0e0e0;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .browser-buttons {
+            display: flex;
+            gap: 0.3rem;
+        }
+
+        .browser-buttons span {
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+        }
+
+        .btn-close { background: #ff5f57; }
+        .btn-minimize { background: #ffbd2e; }
+        .btn-maximize { background: #28ca42; }
+
+        .browser-url {
+            background: white;
+            padding: 0.3rem 1rem;
+            border-radius: 15px;
+            font-size: 0.9rem;
+            color: #666;
+            flex: 1;
+        }
+
+        .browser-content {
+            background: white;
+            min-height: 200px;
+        }
+
+        .devtools-panel {
+            background: #f8f9fa;
+            display: flex;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .panel-tab {
+            padding: 0.5rem 1rem;
+            font-size: 0.9rem;
+            color: #666;
+            border-right: 1px solid #e0e0e0;
+            cursor: pointer;
+        }
+
+        .panel-tab.active {
+            background: white;
+            color: #333;
+            border-bottom: 2px solid #4285f4;
+        }
+
+        .code-preview {
+            padding: 1rem;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+
+        .code-line {
+            margin: 0.3rem 0;
+            color: #333;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 0.1rem 0.3rem;
+            border-radius: 3px;
+        }
+
+        .feature-description h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-description p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 0.5rem 0;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .functions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+        }
+
+        .function-card {
+            background: linear-gradient(135deg, #fff 0%, #f8f9ff 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .function-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 107, 157, 0.1), transparent);
+            transition: all 0.5s ease;
+        }
+
+        .function-card:hover::before {
+            left: 100%;
+        }
+
+        .function-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: #ff6b9d;
+        }
+
+        .function-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .function-card h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .function-card p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .function-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .tag {
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            color: white;
+            padding: 0.3rem 0.8rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 500;
+        }
+
+        .scenarios-container {
+            display: grid;
+            gap: 2rem;
+        }
+
+        .scenario-card {
+            background: linear-gradient(135deg, #fff 0%, #f8f9ff 100%);
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .scenario-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .scenario-header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .scenario-icon {
+            font-size: 2rem;
+        }
+
+        .scenario-header h3 {
+            font-size: 1.3rem;
+            margin: 0;
+        }
+
+        .scenario-content {
+            padding: 2rem;
+        }
+
+        .scenario-content p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .scenario-example {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 10px;
+            border-left: 4px solid #ff6b9d;
+        }
+
+        .scenario-example strong {
+            color: #333;
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .scenario-example ul {
+            margin: 0;
+            padding-left: 1.5rem;
+            color: #666;
+        }
+
+        .scenario-example li {
+            margin: 0.3rem 0;
+        }
+
+        .advantages-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .advantage-item {
+            background: linear-gradient(135deg, #fff 0%, #f8f9ff 100%);
+            padding: 2rem;
+            border-radius: 20px;
+            text-align: center;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .advantage-item:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            border-color: #ff6b9d;
+        }
+
+        .advantage-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .advantage-item h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.3rem;
+        }
+
+        .advantage-item p {
+            color: #666;
+            line-height: 1.6;
+        }
+
+        .getting-started {
+            background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+            padding: 3rem;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .start-steps {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .step-item {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            min-width: 250px;
+            max-width: 300px;
+        }
+
+        .step-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .step-item h3 {
+            color: #333;
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .step-item p {
+            color: #666;
+            margin-bottom: 1rem;
+            line-height: 1.6;
+        }
+
+        .step-item code {
+            background: #f8f9fa;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+            color: #e83e8c;
+            display: block;
+            margin-top: 0.5rem;
+        }
+
+        .step-arrow {
+            font-size: 2rem;
+            color: #ff6b9d;
+            font-weight: bold;
+        }
+
+        .start-resources {
+            text-align: center;
+        }
+
+        .start-resources h3 {
+            color: #333;
+            margin-bottom: 2rem;
+            font-size: 1.5rem;
+        }
+
+        .resource-links {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .resource-link {
+            background: linear-gradient(45deg, #ff6b9d, #c44569);
+            color: white;
+            text-decoration: none;
+            padding: 1rem 1.5rem;
+            border-radius: 25px;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+
+        .resource-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(255, 107, 157, 0.4);
+        }
+
+        .resource-icon {
+            font-size: 1.2rem;
+        }
+
+        .back-navigation {
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        .back-navigation .btn {
+            margin: 0 1rem;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .feature-main {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+
+            .start-steps {
+                flex-direction: column;
+            }
+
+            .step-arrow {
+                transform: rotate(90deg);
+            }
+
+            .resource-links {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .page-title {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</body>
+</html>

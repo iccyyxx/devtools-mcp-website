@@ -1,0 +1,50 @@
+name: 🚀 Deploy DevFest Workshop Website
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout repository
+      uses: actions/checkout@v4
+      
+    - name: 🎯 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        
+    - name: 📦 Install dependencies (if needed)
+      run: |
+        # 如果有 package.json 文件，安装依赖
+        if [ -f package.json ]; then
+          npm ci
+        fi
+        
+    - name: 🔧 Build website (if needed)
+      run: |
+        # 如果有构建脚本，执行构建
+        if [ -f package.json ] && npm run build --if-present; then
+          echo "Build completed"
+        else
+          echo "No build step needed - using static files"
+        fi
+        
+    - name: 🌟 Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      if: github.ref == 'refs/heads/main'
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: ./
+        # 排除不需要的文件
+        exclude_assets: '.github,README.md,.gitignore'
+        
+    - name: 🎉 Deployment Success
+      run: |
+        echo "🎊 Website deployed successfully!"
+        echo "🌐 Your website will be available at: https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}"
